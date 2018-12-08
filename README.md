@@ -31,6 +31,7 @@ First argument gives the proper lifetime (c&tau;) in mm.
 Second argument is the name of the run directory.
 
 Three steps are performed in ```rerun_pythia.sh```:
+
 Run the python script ```lhe_parser.py``` to modify the LHE file:
 ```bash
 python bin/internal/lhe_parser.py input.lhe.gz output.lhe c&tau;
