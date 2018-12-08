@@ -30,17 +30,17 @@ Run the following command to change the decay length of the LHE file, and pass t
 First argument gives the proper lifetime (c&tau;) in mm.
 Second argument is the name of the run directory.
 
-Three steps are performed in ```rerun_pythia.sh```:
+#### Three steps are performed in ```rerun_pythia.sh```:
 
-Run the python script ```lhe_parser.py``` to modify the LHE file:
+1. Run the python script ```lhe_parser.py``` to modify the LHE file:
 ```bash
 python bin/internal/lhe_parser.py input.lhe.gz output.lhe c&tau;
 ```
-Use madevent to run pythia on the existing run. Have to rename and gzip the modified LHE file ```output.lhe``` to ```unweighted_events.lhe.gz``` for pythia8 to recognize and run it. This processes produces a ```.hepmc``` file that Delphes will take as input:
+2. Use madevent to run pythia on the existing run. Have to rename and gzip the modified LHE file ```output.lhe``` to ```unweighted_events.lhe.gz``` for pythia8 to recognize and run it. This processes produces a ```.hepmc``` file that Delphes will take as input:
 ```bash
 ./bin/madevent pythia8 run_name --tag=tag_name
 ```
-Run Delphes using the default CMS card. An output ROOT file is created:
+3. Run Delphes using the default CMS card. An output ROOT file is created:
 ```bash
 /DelphesTiming/DelphesHepMC cards/delphes_card_CMS.tcl output.root input.hepmc
 ```
