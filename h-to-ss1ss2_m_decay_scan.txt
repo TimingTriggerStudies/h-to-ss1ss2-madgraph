@@ -1,0 +1,69 @@
+launch /afs/cern.ch/work/c/christiw/public/LLP/mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve -n run_m50_w0p1 
+shower=Pythia8
+set nevents 1000
+set MSS1 50
+set MSS2 50
+set WSS1 0.1
+set WSS2 0.1
+
+launch /afs/cern.ch/work/c/christiw/public/LLP/mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve -n run_m50_w0p01
+shower=Pythia8
+set nevents 1000
+set MSS1 50
+set MSS2 50
+set WSS1 0.01
+set WSS2 0.01
+launch /afs/cern.ch/work/c/christiw/public/LLP/mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve -n run_m50_w0p001
+shower=Pythia8
+set nevents 1000
+set MSS1 50
+set MSS2 50
+set WSS1 0.001
+set WSS2 0.001
+launch /afs/cern.ch/work/c/christiw/public/LLP/mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve -n run_m40_w0p1
+shower=Pythia8
+set nevents 1000
+set MSS1 40
+set MSS2 40
+set WSS1 0.1
+set WSS2 0.1
+launch /afs/cern.ch/work/c/christiw/public/LLP/mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve -n run_m40_w0p01
+shower=Pythia8
+set nevents 1000
+set MSS1 40
+set MSS2 40
+set WSS1 0.01
+set WSS2 0.01
+launch /afs/cern.ch/work/c/christiw/public/LLP/mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve -n run_m40_w0p001
+shower=Pythia8
+set nevents 1000
+set MSS1 40
+set MSS2 40
+set WSS1 0.001
+set WSS2 0.001
+launch /afs/cern.ch/work/c/christiw/public/LLP/mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve -n run_m30_w0p1
+shower=Pythia8
+set nevents 1000
+set MSS1 30
+set MSS2 30
+set WSS1 0.1
+set WSS2 0.1
+launch /afs/cern.ch/work/c/christiw/public/LLP/mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve -n run_m30_w0p01
+shower=Pythia8
+set nevents 1000
+set MSS1 30
+set MSS2 30
+set WSS1 0.01
+set WSS2 0.01
+launch /afs/cern.ch/work/c/christiw/public/LLP/mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve -n run_m30_w0p001
+shower=Pythia8
+set nevents 1000
+set MSS1 30
+set MSS2 30
+set WSS1 0.001
+set WSS2 0.001
+
+
+
+
+
