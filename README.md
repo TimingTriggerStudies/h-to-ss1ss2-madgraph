@@ -1,5 +1,5 @@
 # h-to-ss1ss2-madgraph
-Repo for generating the LHE files for h-to-ss1ss2 model to input to CMSSW
+Repo for generating the LHE files for h-to-ss1ss2 model to input to CMSSW.
 Also generates Delphes ROOT files to check if the LHE file makes sense
 
 ## LHE file Generation
@@ -13,7 +13,9 @@ output mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve
 This creates the ```mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve``` directory
 
 ### Create Events
-Then run MadGraph with an input scan file, the creates runs with the specified number of events, decay width(GeV) and mass(GeV) of the LLP 
+Launch Madgraph to generate events.
+
+Can run the command below to automatically create multiple runs with the specified number of events, decay width(GeV) and mass(GeV) of the LLP:
 ```bash
 ./bin/mg5_amC h-to-ss1ss2_m_scan.txt
 ```
@@ -21,18 +23,30 @@ The decay width doesn't actually matter in Madgraph, so it's set to a constant o
 
 ## LHE file Modification & Verification
 ### Modification
-To change the decay length of the LHE file, and pass the LHE file to run pythia and Delphes to create a ROOT file where we can visualiz the result:
+Run the following command to change the decay length of the LHE file, and pass the LHE file to run pythia and Delphes to create a ROOT file where we can visualiz the result:
 ```bash
-. rerun_pythia.sh 10 "run_m60_w0p001"
+. rerun_pythia.sh 10 "run_m50_w0p001"
 ```
 First argument gives the proper lifetime (c&tau;) in mm.
 Second argument is the name of the run directory.
 
-After running this, an output ROOT file ```Delphes_output/run_m60_w0p001_pl_10.root``` is created.
+Three steps are performed in ```rerun_pythia.sh```:
+Run the python script ```lhe_parser.py``` to modify the LHE file:
+```bash
+python bin/internal/lhe_parser.py input.lhe.gz output.lhe c&tau;
+```
+Use madevent to run pythia on the existing run. Have to rename and gzip the modified LHE file ```output.lhe``` to ```unweighted_events.lhe.gz``` for pythia8 to recognize and run it. This processes produces a ```.hepmc``` file that Delphes will take as input:
+```bash
+./bin/madevent pythia8 run_name --tag=tag_name
+```
+Run Delphes using the default CMS card. An output ROOT file is created:
+```bash
+/DelphesTiming/DelphesHepMC cards/delphes_card_CMS.tcl output.root input.hepmc
+```
 
 ### Verification
-To plot the historgram of the decay length of the LLPs:
+Open the output ROOT file from Delphes and plot the historgram of the decay length of the LLPs:
 ```bash
 Delphes->Draw("sqrt( Particle.X*Particle.X + Particle.Y*Particle.Y+Particle.Z*Particle.Z)/(sqrt(Particle.Px[Particle.M1]*Particle.Px[Particle.M1] + Particle.Py[Particle.M1]*Particle.Py[Particle.M1]+Particle.Pz[Particle.M1]*Particle.Pz[Particle.M1])/Particle.E[Particle.M1]*1./sqrt(1-(Particle.Px[Particle.M1]*Particle.Px[Particle.M1] + Particle.Py[Particle.M1]*Particle.Py[Particle.M1]+Particle.Pz[Particle.M1]*Particle.Pz[Particle.M1])/(Particle.E[Particle.M1]*Particle.E[Particle.M1])))", "Particle.PID==5 && Particle.Status==23")
 ```
-This should be an exponential with decaying length equal to the first argument given when ```rerun_pythia.sh``` is run
+This should be an exponential with decaying length equal to the first argument (c&tau;) given when ```rerun_pythia.sh``` is run
