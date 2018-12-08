@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+LD_LIBRARY_PATH=/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/HEPTools/lib:$LD_LIBRARY_PATH /afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/HEPTools/MG5aMC_PY8_interface/MG5aMC_PY8_interface pl_1000_pythia8.cmd

@@ -1,0 +1,504 @@
+
+<HTML> 
+<HEAD> 
+     
+    <META HTTP-EQUIV="EXPIRES" CONTENT="20" > 
+    <TITLE>Online Event Generation</TITLE>
+    <link rel=stylesheet href="./HTML/mgstyle.css" type="text/css">
+</HEAD>
+<BODY>
+<script type="text/javascript">
+function UrlExists(url) {
+  var http = new XMLHttpRequest();
+  http.open('HEAD', url, false);
+  try{
+     http.send()
+     }
+  catch(err){
+   return 1==2;
+  }
+  return http.status!=404;
+}
+function check_link(url,alt, id){
+    var obj = document.getElementById(id);
+    if ( ! UrlExists(url)){
+       if ( ! UrlExists(alt)){
+         obj.href = url;
+         return 1==1;
+        }
+       obj.href = alt;
+       return 1 == 2;
+    }
+    obj.href = url;
+    return 1==1;
+}
+</script>    
+    <H2 align=center> Results in the h-to-SS1SS2 for p p > h > SS1 SS2, SS1 > b b~, SS2 > ve ve~
+ </H2> 
+    <HR>
+    
+    <br>
+    <br>
+    <H2 align="center"> Available Results </H2>
+        <TABLE BORDER=2 align="center">  
+            <TR align="center">
+                <TH>Run</TH> 
+                <TH>Collider</TH> 
+                <TH> Banner </TH>
+                <TH> Cross section (pb) </TH> 
+                <TH> Events  </TH>
+                <TH> Data </TH>  
+                <TH>Output</TH>
+                <TH>Action</TH> 
+            </TR>      
+            
+        <tr>
+        <td rowspan=4>run_m50_w0p1</td> 
+        <td rowspan=4><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=1> <a href="./Events/run_m50_w0p1/run_m50_w0p1_tag_1_banner.txt">tag_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p1/results.html"> 0.0004452 <font face=symbol>&#177;</font> 1.4e-06 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p1/tag_1_pythia8.log">LOG</a> <a  id='run_m50_w0p1_tag_1_pythia8_HEPMC' href='./Events/run_m50_w0p1/tag_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p1/tag_1_pythia8_events.hepmc.gz','./Events/run_m50_w0p1/tag_1_pythia8_events.hepmc','run_m50_w0p1_tag_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p1  pythia --tag=tag_1')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p1/run_m50_w0p1_tag_2_banner.txt">tag_2</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p1/results.html"> 0.000446 <font face=symbol>&#177;</font> 1.4e-06 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p1/tag_2_pythia8.log">LOG</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p1  pythia --tag=tag_2')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p1/run_m50_w0p1_tag_3_banner.txt">tag_3</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p1/results.html"> 0.0004454 <font face=symbol>&#177;</font> 1.4e-06 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p1/tag_3_pythia8.log">LOG</a> <a  id='run_m50_w0p1_tag_3_pythia8_HEPMC' href='./Events/run_m50_w0p1/tag_3_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p1/tag_3_pythia8_events.hepmc.gz','./Events/run_m50_w0p1/tag_3_pythia8_events.hepmc','run_m50_w0p1_tag_3_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p1  pythia --tag=tag_3')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p1/run_m50_w0p1_tag_4_banner.txt">tag_4</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p1/results.html"> 0.0004454 <font face=symbol>&#177;</font> 1.4e-06 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p1/tag_4_pythia8.log">LOG</a> <a  id='run_m50_w0p1_tag_4_pythia8_HEPMC' href='./Events/run_m50_w0p1/tag_4_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p1/tag_4_pythia8_events.hepmc.gz','./Events/run_m50_w0p1/tag_4_pythia8_events.hepmc','run_m50_w0p1_tag_4_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p1 pythia --tag=tag_4')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m50_w0p1')"></td>
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=8>run_m50_w0p001</td> 
+        <td rowspan=8><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=2> <a href="./Events/run_m50_w0p001/run_m50_w0p001_tag_1_banner.txt">tag_1</a></td>
+        
+        <td rowspan=2><center><a href="./HTML/run_m50_w0p001/results.html"> 0.04456 <font face=symbol>&#177;</font> 0.00013 </a> <font face=symbol>&#177;</font> <a href="./Events/run_m50_w0p001/parton_systematics.log">systematics</a> </center></td>
+        <td rowspan=2><center> 1000<center></td><td> parton madevent </td>
+        <td>  <a  id='run_m50_w0p001_tag_1_parton_LHE' href='./Events/run_m50_w0p001/unweighted_events.lhe.gz' onClick="check_link('./Events/run_m50_w0p001/unweighted_events.lhe.gz','./Events/run_m50_w0p001/unweighted_events.lhe','run_m50_w0p001_tag_1_parton_LHE')">LHE</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001 parton --tag=tag_1')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: pythia run_m50_w0p001 ')"></td>
+        </tr>
+        <td> pythia8 </td>
+        <td>  <a href="./Events/run_m50_w0p001/tag_1_pythia8.log">LOG</a> <a  id='run_m50_w0p001_tag_1_pythia8_HEPMC' href='./Events/run_m50_w0p001/tag_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001/tag_1_pythia8_events.hepmc.gz','./Events/run_m50_w0p001/tag_1_pythia8_events.hepmc','run_m50_w0p001_tag_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001  pythia --tag=tag_1')"></td> 
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001/run_m50_w0p001_tag_2_banner.txt">tag_2</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001/results.html"> 4.456 <font face=symbol>&#177;</font> 0.017 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001/tag_2_pythia8.log">LOG</a> <a  id='run_m50_w0p001_tag_2_pythia8_HEPMC' href='./Events/run_m50_w0p001/tag_2_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001/tag_2_pythia8_events.hepmc.gz','./Events/run_m50_w0p001/tag_2_pythia8_events.hepmc','run_m50_w0p001_tag_2_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001  pythia --tag=tag_2')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001/run_m50_w0p001_tag_3_banner.txt">tag_3</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001/results.html"> 4.456 <font face=symbol>&#177;</font> 0.017 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001/tag_3_pythia8.log">LOG</a> <a  id='run_m50_w0p001_tag_3_pythia8_HEPMC' href='./Events/run_m50_w0p001/tag_3_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001/tag_3_pythia8_events.hepmc.gz','./Events/run_m50_w0p001/tag_3_pythia8_events.hepmc','run_m50_w0p001_tag_3_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001  pythia --tag=tag_3')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001/run_m50_w0p001_pl_100_banner.txt">pl_100</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001/results.html"> 4.456 <font face=symbol>&#177;</font> 0.017 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001/pl_100_pythia8.log">LOG</a> <a  id='run_m50_w0p001_pl_100_pythia8_HEPMC' href='./Events/run_m50_w0p001/pl_100_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001/pl_100_pythia8_events.hepmc.gz','./Events/run_m50_w0p001/pl_100_pythia8_events.hepmc','run_m50_w0p001_pl_100_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001  pythia --tag=pl_100')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001/run_m50_w0p001_pl_10_banner.txt">pl_10</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001/results.html"> 4.456 <font face=symbol>&#177;</font> 0.017 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001/pl_10_pythia8.log">LOG</a> <a  id='run_m50_w0p001_pl_10_pythia8_HEPMC' href='./Events/run_m50_w0p001/pl_10_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001/pl_10_pythia8_events.hepmc.gz','./Events/run_m50_w0p001/pl_10_pythia8_events.hepmc','run_m50_w0p001_pl_10_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001  pythia --tag=pl_10')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001/run_m50_w0p001_pl_1_banner.txt">pl_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001/results.html"> 4.456 <font face=symbol>&#177;</font> 0.017 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001/pl_1_pythia8.log">LOG</a> <a  id='run_m50_w0p001_pl_1_pythia8_HEPMC' href='./Events/run_m50_w0p001/pl_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001/pl_1_pythia8_events.hepmc.gz','./Events/run_m50_w0p001/pl_1_pythia8_events.hepmc','run_m50_w0p001_pl_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001  pythia --tag=pl_1')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001/run_m50_w0p001_pl_1000_banner.txt">pl_1000</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001/results.html"> 4.456 <font face=symbol>&#177;</font> 0.017 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001/pl_1000_pythia8.log">LOG</a> <a  id='run_m50_w0p001_pl_1000_pythia8_HEPMC' href='./Events/run_m50_w0p001/pl_1000_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001/pl_1000_pythia8_events.hepmc.gz','./Events/run_m50_w0p001/pl_1000_pythia8_events.hepmc','run_m50_w0p001_pl_1000_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001 pythia --tag=pl_1000')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m50_w0p001')"></td>
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=3>run_m50_w0p01</td> 
+        <td rowspan=3><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=1> <a href="./Events/run_m50_w0p01/run_m50_w0p01_tag_1_banner.txt">tag_1</a><br> <a href='./run_m50_w0p01_tag_1_debug.log'> <font color=red>ERROR</font></a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p01/results.html"> 0.0004464 <font face=symbol>&#177;</font> 1.3e-06 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p01/tag_1_pythia8.log">LOG</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p01  pythia --tag=tag_1')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p01/run_m50_w0p01_tag_2_banner.txt">tag_2</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p01/results.html"> 0.04466 <font face=symbol>&#177;</font> 0.00013 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p01/tag_2_pythia8.log">LOG</a> <a  id='run_m50_w0p01_tag_2_pythia8_HEPMC' href='./Events/run_m50_w0p01/tag_2_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p01/tag_2_pythia8_events.hepmc.gz','./Events/run_m50_w0p01/tag_2_pythia8_events.hepmc','run_m50_w0p01_tag_2_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p01  pythia --tag=tag_2')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p01/run_m50_w0p01_tag_3_banner.txt">tag_3</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p01/results.html"> 0.04466 <font face=symbol>&#177;</font> 0.00013 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p01/tag_3_pythia8.log">LOG</a> <a  id='run_m50_w0p01_tag_3_pythia8_HEPMC' href='./Events/run_m50_w0p01/tag_3_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p01/tag_3_pythia8_events.hepmc.gz','./Events/run_m50_w0p01/tag_3_pythia8_events.hepmc','run_m50_w0p01_tag_3_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p01 pythia --tag=tag_3')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m50_w0p01')"></td>
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=1>run_m40_w0p1</td> 
+        <td rowspan=1><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=1> <a href="./Events/run_m40_w0p1/run_m40_w0p1_tag_1_banner.txt">tag_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m40_w0p1/results.html"> 0.0003553 <font face=symbol>&#177;</font> 1.2e-06 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m40_w0p1/tag_1_pythia8.log">LOG</a> <a  id='run_m40_w0p1_tag_1_pythia8_HEPMC' href='./Events/run_m40_w0p1/tag_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m40_w0p1/tag_1_pythia8_events.hepmc.gz','./Events/run_m40_w0p1/tag_1_pythia8_events.hepmc','run_m40_w0p1_tag_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m40_w0p1 pythia --tag=tag_1')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m40_w0p1')"></td>
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=1>run_m40_w0p01</td> 
+        <td rowspan=1><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=1> <a href="./Events/run_m40_w0p01/run_m40_w0p01_tag_1_banner.txt">tag_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m40_w0p01/results.html"> 0.0356 <font face=symbol>&#177;</font> 0.0001 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m40_w0p01/tag_1_pythia8.log">LOG</a> <a  id='run_m40_w0p01_tag_1_pythia8_HEPMC' href='./Events/run_m40_w0p01/tag_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m40_w0p01/tag_1_pythia8_events.hepmc.gz','./Events/run_m40_w0p01/tag_1_pythia8_events.hepmc','run_m40_w0p01_tag_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m40_w0p01 pythia --tag=tag_1')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m40_w0p01')"></td>
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=6>run_m40_w0p001</td> 
+        <td rowspan=6><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=2> <a href="./Events/run_m40_w0p001/run_m40_w0p001_tag_1_banner.txt">tag_1</a></td>
+        
+        <td rowspan=2><center><a href="./HTML/run_m40_w0p001/results.html"> 3.53 <font face=symbol>&#177;</font> 0.013 </a> <font face=symbol>&#177;</font> <a href="./Events/run_m40_w0p001/parton_systematics.log">systematics</a> </center></td>
+        <td rowspan=2><center> 1000<center></td><td> parton madevent </td>
+        <td>  <a  id='run_m40_w0p001_tag_1_parton_LHE' href='./Events/run_m40_w0p001/unweighted_events.lhe.gz' onClick="check_link('./Events/run_m40_w0p001/unweighted_events.lhe.gz','./Events/run_m40_w0p001/unweighted_events.lhe','run_m40_w0p001_tag_1_parton_LHE')">LHE</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m40_w0p001 parton --tag=tag_1')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: pythia run_m40_w0p001 ')"></td>
+        </tr>
+        <td> pythia8 </td>
+        <td>  <a href="./Events/run_m40_w0p001/tag_1_pythia8.log">LOG</a> <a  id='run_m40_w0p001_tag_1_pythia8_HEPMC' href='./Events/run_m40_w0p001/tag_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m40_w0p001/tag_1_pythia8_events.hepmc.gz','./Events/run_m40_w0p001/tag_1_pythia8_events.hepmc','run_m40_w0p001_tag_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m40_w0p001  pythia --tag=tag_1')"></td> 
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m40_w0p001/run_m40_w0p001_pl_100_banner.txt">pl_100</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m40_w0p001/results.html"> 3.53 <font face=symbol>&#177;</font> 0.013 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m40_w0p001/pl_100_pythia8.log">LOG</a> <a  id='run_m40_w0p001_pl_100_pythia8_HEPMC' href='./Events/run_m40_w0p001/pl_100_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m40_w0p001/pl_100_pythia8_events.hepmc.gz','./Events/run_m40_w0p001/pl_100_pythia8_events.hepmc','run_m40_w0p001_pl_100_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m40_w0p001  pythia --tag=pl_100')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m40_w0p001/run_m40_w0p001_pl_1_banner.txt">pl_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m40_w0p001/results.html"> 3.53 <font face=symbol>&#177;</font> 0.013 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m40_w0p001/pl_1_pythia8.log">LOG</a> <a  id='run_m40_w0p001_pl_1_pythia8_HEPMC' href='./Events/run_m40_w0p001/pl_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m40_w0p001/pl_1_pythia8_events.hepmc.gz','./Events/run_m40_w0p001/pl_1_pythia8_events.hepmc','run_m40_w0p001_pl_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m40_w0p001  pythia --tag=pl_1')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m40_w0p001/run_m40_w0p001_pl_10_banner.txt">pl_10</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m40_w0p001/results.html"> 3.53 <font face=symbol>&#177;</font> 0.013 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m40_w0p001/pl_10_pythia8.log">LOG</a> <a  id='run_m40_w0p001_pl_10_pythia8_HEPMC' href='./Events/run_m40_w0p001/pl_10_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m40_w0p001/pl_10_pythia8_events.hepmc.gz','./Events/run_m40_w0p001/pl_10_pythia8_events.hepmc','run_m40_w0p001_pl_10_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m40_w0p001  pythia --tag=pl_10')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m40_w0p001/run_m40_w0p001_pl_1000_banner.txt">pl_1000</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m40_w0p001/results.html"> 3.53 <font face=symbol>&#177;</font> 0.013 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m40_w0p001/pl_1000_pythia8.log">LOG</a> <a  id='run_m40_w0p001_pl_1000_pythia8_HEPMC' href='./Events/run_m40_w0p001/pl_1000_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m40_w0p001/pl_1000_pythia8_events.hepmc.gz','./Events/run_m40_w0p001/pl_1000_pythia8_events.hepmc','run_m40_w0p001_pl_1000_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m40_w0p001 pythia --tag=pl_1000')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m40_w0p001')"></td>
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=1>run_m30_w0p1</td> 
+        <td rowspan=1><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=1> <a href="./Events/run_m30_w0p1/run_m30_w0p1_tag_1_banner.txt">tag_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m30_w0p1/results.html"> 0.0002124 <font face=symbol>&#177;</font> 3.5e-07 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m30_w0p1/tag_1_pythia8.log">LOG</a> <a  id='run_m30_w0p1_tag_1_pythia8_HEPMC' href='./Events/run_m30_w0p1/tag_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m30_w0p1/tag_1_pythia8_events.hepmc.gz','./Events/run_m30_w0p1/tag_1_pythia8_events.hepmc','run_m30_w0p1_tag_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m30_w0p1 pythia --tag=tag_1')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m30_w0p1')"></td>
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=1>run_m30_w0p01</td> 
+        <td rowspan=1><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=1> <a href="./Events/run_m30_w0p01/run_m30_w0p01_tag_1_banner.txt">tag_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m30_w0p01/results.html"> 0.02128 <font face=symbol>&#177;</font> 6.2e-05 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m30_w0p01/tag_1_pythia8.log">LOG</a> <a  id='run_m30_w0p01_tag_1_pythia8_HEPMC' href='./Events/run_m30_w0p01/tag_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m30_w0p01/tag_1_pythia8_events.hepmc.gz','./Events/run_m30_w0p01/tag_1_pythia8_events.hepmc','run_m30_w0p01_tag_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m30_w0p01 pythia --tag=tag_1')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m30_w0p01')"></td>
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=6>run_m30_w0p001</td> 
+        <td rowspan=6><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=2> <a href="./Events/run_m30_w0p001/run_m30_w0p001_tag_1_banner.txt">tag_1</a></td>
+        
+        <td rowspan=2><center><a href="./HTML/run_m30_w0p001/results.html"> 2.134 <font face=symbol>&#177;</font> 0.012 </a> <font face=symbol>&#177;</font> <a href="./Events/run_m30_w0p001/parton_systematics.log">systematics</a> </center></td>
+        <td rowspan=2><center> 1000<center></td><td> parton madevent </td>
+        <td>  <a  id='run_m30_w0p001_tag_1_parton_LHE' href='./Events/run_m30_w0p001/unweighted_events.lhe.gz' onClick="check_link('./Events/run_m30_w0p001/unweighted_events.lhe.gz','./Events/run_m30_w0p001/unweighted_events.lhe','run_m30_w0p001_tag_1_parton_LHE')">LHE</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m30_w0p001 parton --tag=tag_1')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: pythia run_m30_w0p001 ')"></td>
+        </tr>
+        <td> pythia8 </td>
+        <td>  <a href="./Events/run_m30_w0p001/tag_1_pythia8.log">LOG</a> <a  id='run_m30_w0p001_tag_1_pythia8_HEPMC' href='./Events/run_m30_w0p001/tag_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m30_w0p001/tag_1_pythia8_events.hepmc.gz','./Events/run_m30_w0p001/tag_1_pythia8_events.hepmc','run_m30_w0p001_tag_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m30_w0p001  pythia --tag=tag_1')"></td> 
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m30_w0p001/run_m30_w0p001_pl_100_banner.txt">pl_100</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m30_w0p001/results.html"> 2.134 <font face=symbol>&#177;</font> 0.012 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m30_w0p001/pl_100_pythia8.log">LOG</a> <a  id='run_m30_w0p001_pl_100_pythia8_HEPMC' href='./Events/run_m30_w0p001/pl_100_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m30_w0p001/pl_100_pythia8_events.hepmc.gz','./Events/run_m30_w0p001/pl_100_pythia8_events.hepmc','run_m30_w0p001_pl_100_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m30_w0p001  pythia --tag=pl_100')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m30_w0p001/run_m30_w0p001_pl_1_banner.txt">pl_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m30_w0p001/results.html"> 2.134 <font face=symbol>&#177;</font> 0.012 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m30_w0p001/pl_1_pythia8.log">LOG</a> <a  id='run_m30_w0p001_pl_1_pythia8_HEPMC' href='./Events/run_m30_w0p001/pl_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m30_w0p001/pl_1_pythia8_events.hepmc.gz','./Events/run_m30_w0p001/pl_1_pythia8_events.hepmc','run_m30_w0p001_pl_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m30_w0p001  pythia --tag=pl_1')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m30_w0p001/run_m30_w0p001_pl_10_banner.txt">pl_10</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m30_w0p001/results.html"> 2.134 <font face=symbol>&#177;</font> 0.012 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m30_w0p001/pl_10_pythia8.log">LOG</a> <a  id='run_m30_w0p001_pl_10_pythia8_HEPMC' href='./Events/run_m30_w0p001/pl_10_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m30_w0p001/pl_10_pythia8_events.hepmc.gz','./Events/run_m30_w0p001/pl_10_pythia8_events.hepmc','run_m30_w0p001_pl_10_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m30_w0p001  pythia --tag=pl_10')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m30_w0p001/run_m30_w0p001_pl_1000_banner.txt">pl_1000</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m30_w0p001/results.html"> 2.134 <font face=symbol>&#177;</font> 0.012 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m30_w0p001/pl_1000_pythia8.log">LOG</a> <a  id='run_m30_w0p001_pl_1000_pythia8_HEPMC' href='./Events/run_m30_w0p001/pl_1000_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m30_w0p001/pl_1000_pythia8_events.hepmc.gz','./Events/run_m30_w0p001/pl_1000_pythia8_events.hepmc','run_m30_w0p001_pl_1000_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m30_w0p001 pythia --tag=pl_1000')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m30_w0p001')"></td>
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=1>test</td> 
+        <td rowspan=1><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=1> <a href="./Events/test/test_tag_1_banner.txt">tag_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/test/results.html"> 0.0004465 <font face=symbol>&#177;</font> 2.4e-06 </a>  </center></td>
+        <td rowspan=1><center> 100<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/test/tag_1_pythia8.log">LOG</a> <a  id='test_tag_1_pythia8_HEPMC' href='./Events/test/tag_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/test/tag_1_pythia8_events.hepmc.gz','./Events/test/tag_1_pythia8_events.hepmc','test_tag_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove test pythia --tag=tag_1')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes test')"></td>
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=10>run_m50_w0p001_test</td> 
+        <td rowspan=10><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=2> <a href="./Events/run_m50_w0p001_test/run_m50_w0p001_test_tag_1_banner.txt">tag_1</a></td>
+        
+        <td rowspan=2><center><a href="./HTML/run_m50_w0p001_test/results.html"> 4.47 <font face=symbol>&#177;</font> 0.04 </a> <font face=symbol>&#177;</font> <a href="./Events/run_m50_w0p001_test/parton_systematics.log">systematics</a> </center></td>
+        <td rowspan=2><center> 3<center></td><td> parton madevent </td>
+        <td>  <a  id='run_m50_w0p001_test_tag_1_parton_LHE' href='./Events/run_m50_w0p001_test/unweighted_events.lhe.gz' onClick="check_link('./Events/run_m50_w0p001_test/unweighted_events.lhe.gz','./Events/run_m50_w0p001_test/unweighted_events.lhe','run_m50_w0p001_test_tag_1_parton_LHE')">LHE</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_test parton --tag=tag_1')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: pythia run_m50_w0p001_test ')"></td>
+        </tr>
+        <td> pythia8 </td>
+        <td>  <a href="./Events/run_m50_w0p001_test/tag_1_pythia8.log">LOG</a> <a  id='run_m50_w0p001_test_tag_1_pythia8_HEPMC' href='./Events/run_m50_w0p001_test/tag_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001_test/tag_1_pythia8_events.hepmc.gz','./Events/run_m50_w0p001_test/tag_1_pythia8_events.hepmc','run_m50_w0p001_test_tag_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_test  pythia --tag=tag_1')"></td> 
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001_test/run_m50_w0p001_test_tag_2_banner.txt">tag_2</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001_test/results.html"> 4.47 <font face=symbol>&#177;</font> 0.04 </a>  </center></td>
+        <td rowspan=1><center> 3<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001_test/tag_2_pythia8.log">LOG</a> <a  id='run_m50_w0p001_test_tag_2_pythia8_HEPMC' href='./Events/run_m50_w0p001_test/tag_2_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001_test/tag_2_pythia8_events.hepmc.gz','./Events/run_m50_w0p001_test/tag_2_pythia8_events.hepmc','run_m50_w0p001_test_tag_2_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_test  pythia --tag=tag_2')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001_test/run_m50_w0p001_test_tag_3_banner.txt">tag_3</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001_test/results.html"> 4.47 <font face=symbol>&#177;</font> 0.04 </a>  </center></td>
+        <td rowspan=1><center> 3<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001_test/tag_3_pythia8.log">LOG</a> <a  id='run_m50_w0p001_test_tag_3_pythia8_HEPMC' href='./Events/run_m50_w0p001_test/tag_3_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001_test/tag_3_pythia8_events.hepmc.gz','./Events/run_m50_w0p001_test/tag_3_pythia8_events.hepmc','run_m50_w0p001_test_tag_3_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_test  pythia --tag=tag_3')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001_test/run_m50_w0p001_test_pl_1_banner.txt">pl_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001_test/results.html"> 4.47 <font face=symbol>&#177;</font> 0.04 </a>  </center></td>
+        <td rowspan=1><center> 3<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001_test/pl_1_pythia8.log">LOG</a> <a  id='run_m50_w0p001_test_pl_1_pythia8_HEPMC' href='./Events/run_m50_w0p001_test/pl_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001_test/pl_1_pythia8_events.hepmc.gz','./Events/run_m50_w0p001_test/pl_1_pythia8_events.hepmc','run_m50_w0p001_test_pl_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_test  pythia --tag=pl_1')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001_test/run_m50_w0p001_test_pl_50_banner.txt">pl_50</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001_test/results.html"> 4.47 <font face=symbol>&#177;</font> 0.04 </a>  </center></td>
+        <td rowspan=1><center> 3<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001_test/pl_50_pythia8.log">LOG</a> <a  id='run_m50_w0p001_test_pl_50_pythia8_HEPMC' href='./Events/run_m50_w0p001_test/pl_50_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001_test/pl_50_pythia8_events.hepmc.gz','./Events/run_m50_w0p001_test/pl_50_pythia8_events.hepmc','run_m50_w0p001_test_pl_50_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_test  pythia --tag=pl_50')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001_test/run_m50_w0p001_test_pl_30_banner.txt">pl_30</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001_test/results.html"> 4.47 <font face=symbol>&#177;</font> 0.04 </a>  </center></td>
+        <td rowspan=1><center> 3<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001_test/pl_30_pythia8.log">LOG</a> <a  id='run_m50_w0p001_test_pl_30_pythia8_HEPMC' href='./Events/run_m50_w0p001_test/pl_30_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001_test/pl_30_pythia8_events.hepmc.gz','./Events/run_m50_w0p001_test/pl_30_pythia8_events.hepmc','run_m50_w0p001_test_pl_30_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_test  pythia --tag=pl_30')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001_test/run_m50_w0p001_test_pl_100_banner.txt">pl_100</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001_test/results.html"> 4.47 <font face=symbol>&#177;</font> 0.04 </a>  </center></td>
+        <td rowspan=1><center> 3<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001_test/pl_100_pythia8.log">LOG</a> <a  id='run_m50_w0p001_test_pl_100_pythia8_HEPMC' href='./Events/run_m50_w0p001_test/pl_100_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001_test/pl_100_pythia8_events.hepmc.gz','./Events/run_m50_w0p001_test/pl_100_pythia8_events.hepmc','run_m50_w0p001_test_pl_100_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_test  pythia --tag=pl_100')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001_test/run_m50_w0p001_test_pl_10_banner.txt">pl_10</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001_test/results.html"> 4.47 <font face=symbol>&#177;</font> 0.04 </a>  </center></td>
+        <td rowspan=1><center> 3<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001_test/pl_10_pythia8.log">LOG</a> <a  id='run_m50_w0p001_test_pl_10_pythia8_HEPMC' href='./Events/run_m50_w0p001_test/pl_10_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001_test/pl_10_pythia8_events.hepmc.gz','./Events/run_m50_w0p001_test/pl_10_pythia8_events.hepmc','run_m50_w0p001_test_pl_10_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_test  pythia --tag=pl_10')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m50_w0p001_test/run_m50_w0p001_test_pl_1000_banner.txt">pl_1000</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m50_w0p001_test/results.html"> 4.47 <font face=symbol>&#177;</font> 0.04 </a>  </center></td>
+        <td rowspan=1><center> 3<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m50_w0p001_test/pl_1000_pythia8.log">LOG</a> <a  id='run_m50_w0p001_test_pl_1000_pythia8_HEPMC' href='./Events/run_m50_w0p001_test/pl_1000_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001_test/pl_1000_pythia8_events.hepmc.gz','./Events/run_m50_w0p001_test/pl_1000_pythia8_events.hepmc','run_m50_w0p001_test_pl_1000_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_test pythia --tag=pl_1000')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m50_w0p001_test')"></td>
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=2>run_m50_w0p001_ev50</td> 
+        <td rowspan=2><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=2> <a href="./Events/run_m50_w0p001_ev50/run_m50_w0p001_ev50_pl_10_banner.txt">pl_10</a></td>
+        
+        <td rowspan=2><center><a href="./HTML/run_m50_w0p001_ev50/results.html"> 4.483 <font face=symbol>&#177;</font> 0.023 </a> <font face=symbol>&#177;</font> <a href="./Events/run_m50_w0p001_ev50/parton_systematics.log">systematics</a> </center></td>
+        <td rowspan=2><center> 50<center></td><td> parton madevent </td>
+        <td>  <a  id='run_m50_w0p001_ev50_pl_10_parton_LHE' href='./Events/run_m50_w0p001_ev50/unweighted_events.lhe.gz' onClick="check_link('./Events/run_m50_w0p001_ev50/unweighted_events.lhe.gz','./Events/run_m50_w0p001_ev50/unweighted_events.lhe','run_m50_w0p001_ev50_pl_10_parton_LHE')">LHE</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_ev50 parton --tag=pl_10')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: pythia run_m50_w0p001_ev50 ')"></td>
+        </tr>
+        <td> pythia8 </td>
+        <td>  <a href="./Events/run_m50_w0p001_ev50/pl_10_pythia8.log">LOG</a> <a  id='run_m50_w0p001_ev50_pl_10_pythia8_HEPMC' href='./Events/run_m50_w0p001_ev50/pl_10_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001_ev50/pl_10_pythia8_events.hepmc.gz','./Events/run_m50_w0p001_ev50/pl_10_pythia8_events.hepmc','run_m50_w0p001_ev50_pl_10_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_ev50 pythia --tag=pl_10')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m50_w0p001_ev50')"></td> 
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=2>run_m50_w0p001_ev3</td> 
+        <td rowspan=2><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=2> <a href="./Events/run_m50_w0p001_ev3/run_m50_w0p001_ev3_pl_10_banner.txt">pl_10</a></td>
+        
+        <td rowspan=2><center><a href="./HTML/run_m50_w0p001_ev3/results.html"> 4.488 <font face=symbol>&#177;</font> 0.023 </a> <font face=symbol>&#177;</font> <a href="./Events/run_m50_w0p001_ev3/parton_systematics.log">systematics</a> </center></td>
+        <td rowspan=2><center> 3<center></td><td> parton madevent </td>
+        <td>  <a  id='run_m50_w0p001_ev3_pl_10_parton_LHE' href='./Events/run_m50_w0p001_ev3/unweighted_events.lhe.gz' onClick="check_link('./Events/run_m50_w0p001_ev3/unweighted_events.lhe.gz','./Events/run_m50_w0p001_ev3/unweighted_events.lhe','run_m50_w0p001_ev3_pl_10_parton_LHE')">LHE</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_ev3 parton --tag=pl_10')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: pythia run_m50_w0p001_ev3 ')"></td>
+        </tr>
+        <td> pythia8 </td>
+        <td>  <a href="./Events/run_m50_w0p001_ev3/pl_10_pythia8.log">LOG</a> <a  id='run_m50_w0p001_ev3_pl_10_pythia8_HEPMC' href='./Events/run_m50_w0p001_ev3/pl_10_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m50_w0p001_ev3/pl_10_pythia8_events.hepmc.gz','./Events/run_m50_w0p001_ev3/pl_10_pythia8_events.hepmc','run_m50_w0p001_ev3_pl_10_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m50_w0p001_ev3 pythia --tag=pl_10')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m50_w0p001_ev3')"></td> 
+        </tr>
+        </tr>
+        
+        <tr>
+        <td rowspan=4>run_m60_w0p001</td> 
+        <td rowspan=4><center>  p  p <br> 6500.0 x 6500.0  GeV </center></td>
+        
+        <td rowspan=1> <a href="./Events/run_m60_w0p001/run_m60_w0p001_tag_1_banner.txt">tag_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m60_w0p001/results.html"> 3.044 <font face=symbol>&#177;</font> 0.0098 </a> <font face=symbol>&#177;</font> <a href="./Events/run_m60_w0p001/parton_systematics.log">systematics</a> </center></td>
+        <td rowspan=1><center> 1000<center></td><td> parton madevent </td>
+        <td>  <a  id='run_m60_w0p001_tag_1_parton_LHE' href='./Events/run_m60_w0p001/unweighted_events.lhe.gz' onClick="check_link('./Events/run_m60_w0p001/unweighted_events.lhe.gz','./Events/run_m60_w0p001/unweighted_events.lhe','run_m60_w0p001_tag_1_parton_LHE')">LHE</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m60_w0p001 parton --tag=tag_1')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: pythia run_m60_w0p001 ')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m60_w0p001/run_m60_w0p001_pl_1_banner.txt">pl_1</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m60_w0p001/results.html"> 3.044 <font face=symbol>&#177;</font> 0.0098 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m60_w0p001/pl_1_pythia8.log">LOG</a> <a  id='run_m60_w0p001_pl_1_pythia8_HEPMC' href='./Events/run_m60_w0p001/pl_1_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m60_w0p001/pl_1_pythia8_events.hepmc.gz','./Events/run_m60_w0p001/pl_1_pythia8_events.hepmc','run_m60_w0p001_pl_1_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m60_w0p001  pythia --tag=pl_1')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m60_w0p001/run_m60_w0p001_pl_10_banner.txt">pl_10</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m60_w0p001/results.html"> 3.044 <font face=symbol>&#177;</font> 0.0098 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m60_w0p001/pl_10_pythia8.log">LOG</a> <a  id='run_m60_w0p001_pl_10_pythia8_HEPMC' href='./Events/run_m60_w0p001/pl_10_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m60_w0p001/pl_10_pythia8_events.hepmc.gz','./Events/run_m60_w0p001/pl_10_pythia8_events.hepmc','run_m60_w0p001_pl_10_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m60_w0p001  pythia --tag=pl_10')"></td>
+        </tr>
+
+        <td rowspan=1> <a href="./Events/run_m60_w0p001/run_m60_w0p001_pl_1000_banner.txt">pl_1000</a></td>
+        
+        <td rowspan=1><center><a href="./HTML/run_m60_w0p001/results.html"> 3.044 <font face=symbol>&#177;</font> 0.0098 </a>  </center></td>
+        <td rowspan=1><center> 1000<center></td><td> pythia8 madevent </td>
+        <td>  <a href="./Events/run_m60_w0p001/pl_1000_pythia8.log">LOG</a> <a  id='run_m60_w0p001_pl_1000_pythia8_HEPMC' href='./Events/run_m60_w0p001/pl_1000_pythia8_events.hepmc.gz' onClick="check_link('./Events/run_m60_w0p001/pl_1000_pythia8_events.hepmc.gz','./Events/run_m60_w0p001/pl_1000_pythia8_events.hepmc','run_m60_w0p001_pl_1000_pythia8_HEPMC')">HEPMC</a></td>
+        <td> <INPUT TYPE=SUBMIT VALUE='remove run' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: remove run_m60_w0p001 pythia --tag=pl_1000')"><INPUT TYPE=SUBMIT VALUE='launch detector simulation' onClick="alert('Launch ./bin/madevent in a shell, and run the following command: delphes run_m60_w0p001')"></td>
+        </tr>
+        </tr>
+        
+        </TABLE>
+    <H3 align=center><A HREF="./index.html"> Main Page </A></H3>
+</BODY> 
+</HTML> 

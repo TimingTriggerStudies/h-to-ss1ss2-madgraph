@@ -1,0 +1,94 @@
+#************************************************************
+#*               MadGraph5_aMC@NLO/MadEvent                 *
+#*                                                          *
+#*                *                       *                 *
+#*                  *        * *        *                   *
+#*                    * * * * 5 * * * *                     *
+#*                  *        * *        *                   *
+#*                *                       *                 *
+#*                                                          *
+#*                                                          *
+#*         VERSION 2.6.4                 2018-11-09         *
+#*                                                          *
+#*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+#*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+#*                                                          *
+#************************************************************
+#*                                                          *
+#*               Command File for MadEvent                  *
+#*                                                          *
+#*     run as ./bin/madevent.py filename                    *
+#*                                                          *
+#************************************************************
+generate_events run_m50_w0p01
+Traceback (most recent call last):
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/interface/extended_cmd.py", line 1501, in onecmd
+    return self.onecmd_orig(line, **opt)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/interface/extended_cmd.py", line 1450, in onecmd_orig
+    return func(arg, **opt)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/interface/madevent_interface.py", line 2469, in do_generate_events
+    self.run_generate_events(switch_mode, args)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/interface/common_run_interface.py", line 6801, in new_fct
+    original_fct(obj, *args, **opts)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/interface/madevent_interface.py", line 2573, in run_generate_events
+    self.exec_cmd('shower --no_default', postcmd=False, printcmd=False)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/interface/extended_cmd.py", line 1528, in exec_cmd
+    stop = Cmd.onecmd_orig(current_interface, line, **opt)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/interface/extended_cmd.py", line 1450, in onecmd_orig
+    return func(arg, **opt)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/interface/madevent_interface.py", line 3806, in do_shower
+    postcmd=False, printcmd=False)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/interface/extended_cmd.py", line 1528, in exec_cmd
+    stop = Cmd.onecmd_orig(current_interface, line, **opt)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/interface/extended_cmd.py", line 1450, in onecmd_orig
+    return func(arg, **opt)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/interface/madevent_interface.py", line 4536, in do_pythia8
+    new_djr_HwU = histograms.HwUList(djr_file,run_id=0)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/various/histograms.py", line 1651, in __init__
+    raw_labels=raw_labels)
+  File "/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/madgraph/various/histograms.py", line 1767, in parse_histos_from_PY8_XML_stream
+    "specified XML source."
+MadGraph5Error: Histogram with run_id '0' was not found in the specified XML source.
+                              Run Options    
+                              -----------    
+               stdout_level 	:	20 (user set)
+
+                         MadEvent Options    
+                         ----------------    
+     automatic_html_opening 	:	False (user set)
+        notification_center 	:	True
+          cluster_temp_path 	:	None
+             cluster_memory 	:	None (user set)
+               cluster_size 	:	100
+              cluster_queue 	:	None (user set)
+                    nb_core 	:	10 (user set)
+               cluster_time 	:	10 (user set)
+                   run_mode 	:	2
+
+                      Configuration Options    
+                      ---------------------    
+                text_editor 	:	None
+         cluster_local_path 	:	None
+      cluster_status_update 	:	(600, 30)
+               pythia8_path 	:	/afs/cern.ch/work/c/christiw/programs/MG5_aMC_v2_6_4/HEPTools/pythia8 (user set)
+                  hwpp_path 	:	None (user set)
+            pythia-pgs_path 	:	None (user set)
+                    td_path 	:	None (user set)
+               delphes_path 	:	None (user set)
+                thepeg_path 	:	None (user set)
+               cluster_type 	:	condor
+          madanalysis5_path 	:	None (user set)
+           cluster_nb_retry 	:	1
+                 eps_viewer 	:	None
+                web_browser 	:	None
+               syscalc_path 	:	None (user set)
+           madanalysis_path 	:	None (user set)
+                     lhapdf 	:	lhapdf-config
+              f2py_compiler 	:	None
+                 hepmc_path 	:	None (user set)
+         cluster_retry_wait 	:	300
+           fortran_compiler 	:	None
+                auto_update 	:	7 (user set)
+        exrootanalysis_path 	:	None (user set)
+                    timeout 	:	60
+               cpp_compiler 	:	None
