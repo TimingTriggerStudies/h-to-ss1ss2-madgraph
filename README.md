@@ -28,6 +28,7 @@ Run the following command to change the decay length of the LHE file, and pass t
 . rerun_pythia.sh 10 "run_m50_w0p001"
 ```
 First argument gives the proper lifetime (c&tau;) in mm.
+
 Second argument is the name of the run directory.
 
 #### Three steps are performed in ```rerun_pythia.sh```:
