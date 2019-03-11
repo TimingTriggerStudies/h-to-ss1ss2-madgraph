@@ -7,10 +7,28 @@ Also generates Delphes ROOT files to check if the LHE file makes sense
 ### Generation of the Madgraph Output Directory
 ```bash
 ./bin/mg5_amC
+import model SM-HS1S2
 generate p p > h > SS1 SS2, SS1 > b b~, SS2 > ve ve~
 output mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve
 ```
 This creates the ```mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve``` directory
+
+#### ggH with ISR:
+```bash
+generate p p > h > SS1 SS2, SS1 > b b~, SS2 > ve ve~
+add process p p > h j, (h > SS1 SS2, SS1 > b b~, SS2 > ve ve~)
+```
+#### VBFH
+```bash
+generate p p > j j h / g QCD=0 QED=3 HIG=0 , (h > SS1 SS2, SS1 > b b~,SS2 > ve ve~)  @1
+```
+
+#### WH & ZH
+```bash
+define w = w+ w-
+generate p p > w h, (h > SS1 SS2, SS1 > b b~, SS2 > ve ve~) @1
+generate p p > z h, (h > SS1 SS2, SS1 > b b~, SS2 > ve ve~) @1
+```
 
 ### Create Events
 Launch Madgraph to generate events.
