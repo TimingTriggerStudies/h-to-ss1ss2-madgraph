@@ -73,6 +73,8 @@ This should be an exponential with decaying length equal to the first argument (
 
 ## Pass through CMSSW to get AOD files
 Get the modified LHE files.
-
+Put the LHE files in: /store/group/phys_susy/razor/christiw/ppTohToSS1SS2_SS1Tobb_SS2Toveve_ggh_withISR_LHE/
+crab config files
+MC_production output: 
 
 
