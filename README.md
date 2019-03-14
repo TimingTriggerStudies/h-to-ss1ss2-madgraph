@@ -18,16 +18,21 @@ This creates the ```mg5_amc_output/ppTohToSS1SS2_SS1Tobb_SS2Toveve``` directory
 generate p p > h > SS1 SS2, SS1 > b b~, SS2 > ve ve~
 add process p p > h j, (h > SS1 SS2, SS1 > b b~, SS2 > ve ve~)
 ```
-#### VBFH
+#### VBFH with ISR
 ```bash
-generate p p > j j h / g QCD=0 QED=3 HIG=0 , (h > SS1 SS2, SS1 > b b~,SS2 > ve ve~)  @1
+generate p p > j j h / g QCD=0 QED=3 HIG=0 , (h > SS1 SS2, SS1 > b b~,SS2 > ve ve~) 
+add process p p > j j j h / g QCD=1 QED=3 HIG=0 , (h > SS1 SS2, SS1 > b b~,SS2 > ve ve~) 
+
 ```
 
 #### WH & ZH
 ```bash
 define w = w+ w-
-generate p p > w h, (h > SS1 SS2, SS1 > b b~, SS2 > ve ve~) @1
-generate p p > z h, (h > SS1 SS2, SS1 > b b~, SS2 > ve ve~) @1
+generate p p > w h, (h > SS1 SS2, SS1 > b b~, SS2 > ve ve~)
+add process p p > w j h, (h > SS1 SS2, SS1 > b b~, SS2 > ve ve~)
+add process p p > z h, (h > SS1 SS2, SS1 > b b~, SS2 > ve ve~) 
+add process p p > z j h, (h > SS1 SS2, SS1 > b b~, SS2 > ve ve~) 
+
 ```
 
 ### Create Events
