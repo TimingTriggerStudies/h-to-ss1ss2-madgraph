@@ -1,3 +1,5 @@
+[TOC]
+
 # h-to-ss1ss2-madgraph
 Repo for generating the LHE files for h-to-ss1ss2 model to input to CMSSW.
 Also generates Delphes ROOT files to check if the LHE file makes sense
